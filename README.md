@@ -16,11 +16,11 @@
   - 适合给孩子边看边练，降低枯燥感
 - `analysis/student-error-analysis-20260505.md`
   - 一次完整错题分析样例（错误类型、占比、根因、建议）
-- `grammar/grammar-difficult-points.md`
-  - 疑难语法笔记（高频易错点 + 讲解话术 + 速记）
+- `subjects/english/notes/grammar-difficult-points.md`
+  - 英语疑难语法笔记（高频易错点 + 讲解话术 + 速记）
 - `subjects/`
   - 多学科骨架目录（`english/`、`math/`、`chinese/`）
-  - 每个学科统一包含 `analysis/`、`notes/`、`prototype/` 模板
+  - 每个学科统一包含 `analysis/`、`notes/`、`prototype/`、`exams/` 模板
 
 ## 使用方式（本地）
 
@@ -56,14 +56,29 @@ open prototype/grammar-teaching.html
 ./scripts/new-note.sh chinese reading-main-idea
 ```
 
+创建新复测卷（按学科）：
+
+```bash
+# 默认用当天日期命名 exam-YYYYMMDD.md
+./scripts/new-exam.sh english
+./scripts/new-exam.sh math
+./scripts/new-exam.sh chinese
+
+# 指定日期或自定义文件名
+./scripts/new-exam.sh english 20260512
+./scripts/new-exam.sh math week2-retest
+./scripts/new-exam.sh chinese reading-retest-1
+```
+
 ## 建议的学习工作流
 
 1. 先做一套题（课堂/练习册/自编小测）
 2. 把错题整理成分析输入（题目、孩子答案、正确答案）
 3. 基于分析结果更新：
-   - `analysis/`：新增一次分析报告
-   - `grammar/`：补充相应知识点讲义
-   - `prototype/`：加入对应交互练习
+   - `subjects/<subject>/analysis/`：新增一次分析报告
+   - `subjects/<subject>/notes/`：补充相应知识点讲义
+   - `subjects/<subject>/prototype/`：加入对应交互练习
+   - `subjects/<subject>/exams/`：生成复测卷并记录结果
 4. 再做一轮针对性小测，观察是否从“会做题”变成“能解释规则”
 
 ## 多学科扩展建议

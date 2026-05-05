@@ -10,7 +10,7 @@
 2. 生成或更新错因分析（对应学科的 `analysis/`）
 3. 提炼知识点讲义（对应学科的 `notes/`）
 4. 调整交互练习原型（对应学科的 `prototype/`）
-5. 做一轮小测复检（可先放在 `analysis/` 文末）
+5. 生成一轮复测卷并记录结果（对应学科的 `exams/`）
 6. 记录本轮结论与下轮重点
 
 ---
@@ -34,6 +34,7 @@
 - `subjects/<subject>/analysis/`
 - `subjects/<subject>/notes/`
 - `subjects/<subject>/prototype/`
+- `subjects/<subject>/exams/`
 
 其中 `<subject>` 当前建议：`english`、`math`、`chinese`。
 
