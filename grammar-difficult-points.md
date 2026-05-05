@@ -42,4 +42,86 @@
 > break down 坏了停，三个短语要记清！
 
 ---
+
+## 名词短语结构 —— 名词前面谁能站？
+
+### 问题诊断
+
+小朋友看到 `The ___ brave act` 填 `extreme`，看到 `The ___ population` 填 `increased`——本质上是**不知道名词前面这个空位只允许谁站**。
+
+### 核心规则：名词的"黄金左位"
+
+英语里，名词前面有一个**黄金位置**，这个位置上只能站**形容词**。就像一个 VIP 座位，只有形容词有票，副词、动词都没票。
+
+```
+The [_____] noun ...
+     ↑
+   只有形容词能站这里！
+```
+
+**可以站的：**
+- 形容词：`The beautiful flower` ✅
+- 形容词：`The increasing population` ✅
+- 形容词：`The northern wind` ✅
+- 形容词：`local farmers` ✅
+
+**不能站的：**
+- 副词：`The extremely flower` ❌（副词应该去修饰形容词）
+- 动词：`The increase population` ❌（动词不能修饰名词）
+- 名词原形：`The north wind`... 等等，`north` 既是名词也是形容词！
+
+### 一张图搞懂：句子里的"岗位"
+
+```
+[限定词]  →  [副词]  →  [形容词]  →  [名词]  ← 这是主角
+  the         very        brave         act
+  the       extremely     ❌            act   ← 副词站错位置了！
+  the                  extremely  ← 副词应该来这里  brave  act
+```
+
+关键洞察：**副词不修饰名词，副词修饰形容词或动词。** 所以副词永远不能直接出现在名词前面！
+
+### 三步判断法
+
+看到 `___ + 名词` 的结构时：
+
+| 步骤 | 问题 | 判断 |
+|------|------|------|
+| 1 | 空后面是什么词？ | 如果是名词 → 跳到第2步 |
+| 2 | 括号里给的是什么词？ | 如果是名词/动词 → 要变成形容词 |
+| 3 | 怎么变？ | 加 -al/-ern/-ing/-y 等形容词后缀 |
+
+### 对照错题理解
+
+```
+❌ The north autumn     → north 是名词，但这里需要形容词 → northern
+❌ The increased population → increased 是过去分词/形容词，但这里需要"持续增长中" → increasing
+❌ help location farmers → location 是名词，但这里需要形容词 → local
+❌ an extreme brave act → extreme 站错了位置（它跑名词前面去了）
+                         brave 才是修饰 act 的形容词
+                         extreme 应该去修饰 brave → extremely brave act
+```
+
+### 讲给孩子听的比喻
+
+> 名词就像国王，形容词是国王的**贴身侍卫**，只能站在国王的**左手边**。
+> 副词是侍卫的**教练**，它不配直接站国王旁边，只能站在侍卫前面训练侍卫。
+>
+> 所以：`The [侍卫] 国王` → `The brave act` ✅
+> 而：`The [教练] 国王` → `The extremely act` ❌
+>
+> 教练应该说：`The [教练+侍卫] 国王` → `The extremely brave act` ✅
+
+### 常见形容词后缀速查
+
+| 后缀 | 例词 | 含义 |
+|------|------|------|
+| -al | nation → **national** | ……的 |
+| -ern | north → **northern** | 方向的 |
+| -ing | increase → **increasing** | 正在……的 |
+| -y | fog → **foggy** | 多……的 |
+| -ous | danger → **dangerous** | 有……的 |
+| -ful | beauty → **beautiful** | 充满……的 |
+
+---
 *持续更新中...*
