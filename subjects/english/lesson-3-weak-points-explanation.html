@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>六年级英语薄弱点讲解方案：情态动词、There be 与数字表达</title>
+  <style>
+    :root {
+      --ink: #21313c;
+      --muted: #60717d;
+      --line: #d9e3e8;
+      --paper: #fbfcf8;
+      --panel: #ffffff;
+      --blue: #2563eb;
+      --green: #16794c;
+      --red: #c24135;
+      --amber: #9a6200;
+      --violet: #6d4ac8;
+      --teal: #087f8c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.72;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #eef6f5;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .top {
+      padding: 34px 0 26px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 48px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 850px;
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 14px 0 18px;
+    }
+
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 26px 0 48px;
+    }
+
+    section {
+      margin: 0 0 26px;
+      padding: 24px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin: 22px 0 10px;
+      font-size: 20px;
+    }
+
+    p { margin: 0 0 12px; }
+
+    ul, ol {
+      margin: 8px 0 0;
+      padding-left: 24px;
+    }
+
+    li { margin: 6px 0; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: #fff;
+    }
+
+    .box h3 {
+      margin-top: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 0 6px 8px 0;
+      padding: 3px 8px;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.blue { background: var(--blue); }
+    .tag.green { background: var(--green); }
+    .tag.red { background: var(--red); }
+    .tag.amber { background: var(--amber); }
+    .tag.violet { background: var(--violet); }
+    .tag.teal { background: var(--teal); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 15px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: #f0f4f7;
+      font-weight: 700;
+    }
+
+    code {
+      padding: 2px 5px;
+      border-radius: 4px;
+      background: #eef2f7;
+      color: #9f1239;
+      font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+      font-size: 0.94em;
+    }
+
+    .right {
+      border-left: 4px solid var(--green);
+      background: #f1f8f4;
+    }
+
+    .wrong {
+      border-left: 4px solid var(--red);
+      background: #fff4f2;
+    }
+
+    .memory {
+      border-left: 4px solid var(--amber);
+      background: #fff8e8;
+    }
+
+    .plan {
+      counter-reset: day;
+      display: grid;
+      gap: 10px;
+    }
+
+    .day {
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      gap: 12px;
+      align-items: start;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fff;
+    }
+
+    .day strong {
+      color: var(--blue);
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 820px) {
+      .grid, .two { grid-template-columns: 1fr; }
+      section { padding: 18px; }
+      .day { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      nav { display: none; }
+      section { break-inside: avoid; }
+      .wrap { width: auto; margin: 0 18mm; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="top">
+        <p class="eyebrow">六年级英语错题诊断 | Lesson 3 + 数词专项</p>
+        <h1>薄弱点讲解方案：先会识别题型，再会选择答案</h1>
+        <p class="lead">根据截图里的批改痕迹，小朋友的主要问题不是单个单词不会，而是看到相似选项时没有先判断“这题考哪条规则”。本方案把规则整理成三个可复习模块：情态动词、There be 句型、数字表达。</p>
+      </div>
+      <nav aria-label="页面导航">
+        <a href="#diagnosis">错因诊断</a>
+        <a href="#modal">情态动词</a>
+        <a href="#therebe">There be</a>
+        <a href="#numbers">数字表达</a>
+        <a href="#review">复习安排</a>
+        <a href="lesson-3-weak-points-drills.html">打开训练题</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="diagnosis">
+      <h2>一、错因诊断</h2>
+      <div class="grid">
+        <div class="box">
+          <span class="tag red">Top 1</span>
+          <h3>情态动词语气强弱混淆</h3>
+          <p>在 <code>can / may / must / should / need / ought to / had better / would</code> 之间选择时，容易只看中文意思，不看语气强弱和固定结构。</p>
+          <p class="note">典型表现：把“最好做某事”与“必须”混淆；不知道 <code>Must I ...?</code> 的否定回答不用 <code>mustn't</code>。</p>
+        </div>
+        <div class="box">
+          <span class="tag amber">Top 2</span>
+          <h3>There be 句型系统不稳</h3>
+          <p><code>There used to be</code>、<code>There is going to be</code>、<code>There will be</code> 和“就近原则”反复出现，但孩子容易把 <code>be</code> 误换成 <code>have</code>。</p>
+          <p class="note">典型表现：看到“有”就想选 have，没有先判断句首是不是 There。</p>
+        </div>
+        <div class="box">
+          <span class="tag violet">Top 3</span>
+          <h3>数字表达规则碎片化</h3>
+          <p>日期、页码、班级年级、序数词、分数、小数、倍数、hundred/thousand 的用法混在一起时，容易靠感觉选。</p>
+          <p class="note">典型表现：知道单词，却不知道什么时候加 <code>the</code>、什么时候用复数、什么时候数字后不能加 s。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="modal">
+      <h2>二、情态动词：先判断“语气”，再看结构</h2>
+      <p>情态动词选择题的第一步不是翻译整句，而是问：这句话是在表达能力、许可、义务、建议、推测，还是礼貌请求？</p>
+
+      <h3>1. 一张表分清核心语气</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>词或结构</th>
+            <th>核心语气</th>
+            <th>例句</th>
+            <th>孩子要记住</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>can</code></td>
+            <td>能力；现在可以做到</td>
+            <td>People can use phones to control appliances.</td>
+            <td>强调“会、能、有能力”。</td>
+          </tr>
+          <tr>
+            <td><code>may</code></td>
+            <td>可能；许可</td>
+            <td>It may rain tonight.</td>
+            <td>比 must 弱，常用于“不确定”。</td>
+          </tr>
+          <tr>
+            <td><code>must</code></td>
+            <td>必须；强制义务</td>
+            <td>We must respect local customs.</td>
+            <td>规则、法律、强烈要求。</td>
+          </tr>
+          <tr>
+            <td><code>should</code></td>
+            <td>应该；一般建议</td>
+            <td>You should be careful.</td>
+            <td>语气比 must 轻。</td>
+          </tr>
+          <tr>
+            <td><code>had better</code></td>
+            <td>最好；带提醒和后果</td>
+            <td>You had better take an umbrella.</td>
+            <td>后面直接加动词原形。</td>
+          </tr>
+          <tr>
+            <td><code>would you please</code></td>
+            <td>礼貌请求</td>
+            <td>Would you please pass the dish?</td>
+            <td>请求别人帮忙，用 would 更自然。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2. 三个高频坑</h3>
+      <div class="grid">
+        <div class="box wrong">
+          <h3>坑 A：had better 后面不加 to</h3>
+          <p><code>You had better tell him.</code></p>
+          <p><code>You had better not tell him.</code></p>
+          <p>口诀：<strong>better 后，动原走；否定 not，夹中间。</strong></p>
+        </div>
+        <div class="box wrong">
+          <h3>坑 B：Must I ...? 的否定回答</h3>
+          <p>问：<code>Must I wear the seat belt?</code></p>
+          <p>答：<code>No, you needn't.</code> 或 <code>No, you don't have to.</code></p>
+          <p><code>mustn't</code> 是“禁止”，不是“不必”。</p>
+        </div>
+        <div class="box wrong">
+          <h3>坑 C：mustn't / can't / shouldn't / needn't</h3>
+          <p><code>mustn't</code> = 禁止</p>
+          <p><code>can't</code> = 不能、没有能力或不允许</p>
+          <p><code>shouldn't</code> = 不应该</p>
+          <p><code>needn't</code> = 不必</p>
+        </div>
+      </div>
+
+      <div class="box memory">
+        <h3>做题顺序</h3>
+        <ol>
+          <li>先看关键词：traffic rules、secret、please、might、ability、local customs。</li>
+          <li>再判断语气：禁止、能力、礼貌请求、建议、必须。</li>
+          <li>最后检查结构：<code>had better + 动词原形</code>，<code>had better not + 动词原形</code>，<code>No, you needn't</code>。</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="therebe">
+      <h2>三、There be：看到 There，不要选 have</h2>
+      <p><code>There be</code> 的本质是“某地/某时存在某物”。中文都可以翻译成“有”，但英语结构不能随便换成 <code>have</code>。</p>
+
+      <div class="grid two">
+        <div class="box right">
+          <h3>正确结构</h3>
+          <p><code>There is a girl in the room.</code></p>
+          <p><code>There used to be a store here.</code></p>
+          <p><code>There is going to be a meeting tomorrow.</code></p>
+          <p><code>There will be a celebration.</code></p>
+        </div>
+        <div class="box wrong">
+          <h3>常见错误</h3>
+          <p><code>There used to have ...</code></p>
+          <p><code>There is going to have ...</code></p>
+          <p><code>There will have ...</code></p>
+          <p>这些错法都来自“中文有 = have”的直译。</p>
+        </div>
+      </div>
+
+      <h3>1. 就近原则</h3>
+      <p>如果 <code>There be</code> 后面有多个名词，<code>be</code> 的形式看离它最近的那个名词。</p>
+      <table>
+        <thead>
+          <tr>
+            <th>句子</th>
+            <th>最近的名词</th>
+            <th>答案</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>There ___ a girl, two boys and three teachers.</code></td>
+            <td><code>a girl</code> 单数</td>
+            <td><code>is</code></td>
+          </tr>
+          <tr>
+            <td><code>There ___ two boys, a girl and a teacher.</code></td>
+            <td><code>two boys</code> 复数</td>
+            <td><code>are</code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>2. 过去、现在、将来三条线</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>时间</th>
+            <th>结构</th>
+            <th>例句</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>过去曾经有</td>
+            <td><code>There used to be ...</code></td>
+            <td>There used to be a store at the corner.</td>
+          </tr>
+          <tr>
+            <td>将要有，计划性较强</td>
+            <td><code>There is/are going to be ...</code></td>
+            <td>There is going to be a meeting tomorrow.</td>
+          </tr>
+          <tr>
+            <td>将会有，普通将来</td>
+            <td><code>There will be ...</code></td>
+            <td>There will be another celebration.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="numbers">
+      <h2>四、数字表达：把题型分成 8 个抽屉</h2>
+      <p>截图中的数词题跨度很大。建议不要把它们当成一堆散题，而是放进不同抽屉：日期、编号、序数、分数、小数、倍数、大数字、整百整千。</p>
+
+      <div class="grid two">
+        <div class="box">
+          <span class="tag blue">抽屉 1</span>
+          <h3>日期</h3>
+          <p>常见格式：<code>December 26, 1893</code>、<code>March 8</code>。</p>
+          <p>月份在前，日期在后；选择题里一般不加 <code>the</code>。</p>
+        </div>
+        <div class="box">
+          <span class="tag green">抽屉 2</span>
+          <h3>编号</h3>
+          <p><code>Class Four, Grade Two</code>、<code>Page Five</code>、<code>Lesson Nine</code>。</p>
+          <p>编号当名字用，常用大写，数字用基数词。</p>
+        </div>
+        <div class="box">
+          <span class="tag violet">抽屉 3</span>
+          <h3>序数词</h3>
+          <p><code>the ninth lesson</code>、<code>the tenth month</code>、<code>the 30th Olympiad</code>。</p>
+          <p>表示“第几”时常用 <code>the + 序数词</code>。</p>
+        </div>
+        <div class="box">
+          <span class="tag amber">抽屉 4</span>
+          <h3>分数</h3>
+          <p><code>one fifth</code>，但 <code>four fifths</code>。</p>
+          <p>分子大于 1，分母序数词加 s。</p>
+        </div>
+        <div class="box">
+          <span class="tag teal">抽屉 5</span>
+          <h3>小数</h3>
+          <p><code>3.58</code> 读作 <code>three point five eight</code>。</p>
+          <p>小数点后逐个读数字，不读 fifty-eight。</p>
+        </div>
+        <div class="box">
+          <span class="tag red">抽屉 6</span>
+          <h3>倍数</h3>
+          <p><code>nine times the size of ...</code></p>
+          <p>几倍大用基数词：<code>nine times</code>，不用 ninth。</p>
+        </div>
+        <div class="box">
+          <span class="tag blue">抽屉 7</span>
+          <h3>hundred / thousand</h3>
+          <p><code>five hundred</code> 不加 s；<code>hundreds of</code> 表示成百上千。</p>
+          <p>前面有具体数字，不加 s，不加 of。</p>
+        </div>
+        <div class="box">
+          <span class="tag green">抽屉 8</span>
+          <h3>年龄和战争</h3>
+          <p><code>in his twenties</code> 表示“在他二十多岁时”。</p>
+          <p><code>the Second World War</code> 表示“第二次世界大战”。</p>
+        </div>
+      </div>
+
+      <div class="box memory">
+        <h3>数字题口令</h3>
+        <p>看到数字题，先问“它是编号还是第几？”编号用基数词：<code>Page Five</code>；第几用序数词：<code>the fifth page</code>。看到 hundred/thousand，先看前面有没有具体数字：有数字不加 s，无数字常用 <code>hundreds of</code>。</p>
+      </div>
+    </section>
+
+    <section id="review">
+      <h2>五、7 天讲解与训练安排</h2>
+      <div class="plan">
+        <div class="day">
+          <strong>第 1 天</strong>
+          <div>只讲情态动词语气表，完成训练题 A 组和 B 组。要求孩子能说出 <code>mustn't</code> 与 <code>needn't</code> 的区别。</div>
+        </div>
+        <div class="day">
+          <strong>第 2 天</strong>
+          <div>复习 <code>had better</code>、<code>would you please</code>、<code>Must I ...?</code>，完成 C 组。错题要口头解释原因。</div>
+        </div>
+        <div class="day">
+          <strong>第 3 天</strong>
+          <div>讲 There be 三条时间线和就近原则，完成 D 组和 E 组。</div>
+        </div>
+        <div class="day">
+          <strong>第 4 天</strong>
+          <div>讲数字题 8 个抽屉，先做日期、编号、序数、小数，完成 F 组。</div>
+        </div>
+        <div class="day">
+          <strong>第 5 天</strong>
+          <div>讲分数、倍数、hundred/thousand、年龄表达，完成 G 组。</div>
+        </div>
+        <div class="day">
+          <strong>第 6 天</strong>
+          <div>做混合题 H 组，不按知识点提示。目标是先识别题型，再选答案。</div>
+        </div>
+        <div class="day">
+          <strong>第 7 天</strong>
+          <div>重做所有错题，若同类题连续 3 题正确，再算通过；若仍错，把那一类放进下一周复习。</div>
+        </div>
+      </div>
+      <p class="note">配套训练题：<a href="lesson-3-weak-points-drills.html">lesson-3-weak-points-drills.html</a></p>
+    </section>
+  </main>
+</body>
+</html>
